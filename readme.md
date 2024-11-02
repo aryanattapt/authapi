@@ -11,7 +11,9 @@ The service is structured as follows:
 - **model:** Defines the data structures for users and request payloads.
 - **repository:** Handles data operations with MongoDB.
 - **service:** Contains business logic for signing up and signing in users.
-- **utils:** Provides utility functions, including password hashing and JWT token generation.
+- **utils:** Provides utility functions, including password hashing, JWT token generation and others.
+- **route:** Defines the API routes mapping HTTP methods and endpoints to their corresponding controller functions, thereby facilitating structured and RESTful interactions within the application.
+- **test:** Provides a suite of automated tests designed to validate the functionality and reliability of the application components
 
 ## Instructions to Run the Service
 
@@ -20,7 +22,7 @@ The service is structured as follows:
 Before running the service, ensure you have the following installed:
 
 - Go (1.16 or higher)
-- MongoDB (local or a cloud instance)
+- MongoDB (local)
 
 ### Setup
 
@@ -32,7 +34,7 @@ Before running the service, ensure you have the following installed:
      brew install mongodb-community
      ```
    - **For Linux:** Follow the instructions on the [MongoDB installation documentation](https://docs.mongodb.com/manual/installation/).
-   - Make sure your local mongodb run at port 27017
+   - Make sure your local mongodb run at port 27017 without any password
 
 2. **Clone the Repository:**
    ```bash
